@@ -22,7 +22,7 @@ openssl rsa -in rsa_pri.pem -pubout -out rsa_pub.pem
 java -agentlib:declass -jar test-encrypted.jar -Ddeclass.key=rsa_pub.pem
 ```
 
-- ### declass 更多用法：
+- ### enclass 更多用法：
 ```c
 Usage: EnClass <-command [options]>
     -jar jarfile  加密指定的 .jar 文件
