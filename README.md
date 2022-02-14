@@ -32,7 +32,7 @@ Usage: EnClass <-command [options]>
     -x pattern    指定要排除的文件（支持通配符）
     
 示例：
-    ./enclass -cp test-v1.0 -key rsa_pri.pem -x *model*
+    ./enclass -cp test-v1.0 -key rsa_pri.pem -x *dto*
     ./enclass -jar test.jar -key rsa_pri.pem -i *algorithm*
 ```
 
