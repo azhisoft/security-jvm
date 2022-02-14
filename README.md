@@ -22,5 +22,25 @@ java -agentlib:declass -jar test-encrypted.jar -Ddeclass.key=rsa_pub.pem
 ```
 
 - ### declass 更多用法：
+```c
+Usage: EnClass <-command [options]>
+    -jar jarfile  加密指定的 .jar 文件
+    -cp filepath  加密指定的 .class 文件，或指定的目录
+    -key keyfile  指定加密的 RSA 私钥文件
+    -i pattern    指定要加密的文件（支持通配符）；不指定时，加密全部文件；指定时，仅加密指定的文件
+    -x pattern    指定要排除的文件（支持通配符）
+```
 
 - ### jartool 的用法：
+```c
+Usage: Jartool <-command [options]>
+    -pack jarfile     打包一个 .jar 文件；需要 -dir 搭配使用，即把 -dir 指定的目录打包成 .jar
+    -unpack jarfile   解包一个 .jar 文件；通常需要 -dir 搭配使用，即把 .jar 解包到 -dir 指定的目录
+    -manifest file    生成一个 MANIFEST.MF 文件，可以搭配 -main 和 -lib 使用
+    -update jarfile   更新 .jar 中的某个文件，需要搭配 -file 使用
+    -dir path         配合 -pack 和 -unpack 使用，用于指定输入/输出目录
+    -main main-class  配合 -manifest 使用，用于指定运行类名，即 Runnable jar 的启动类
+    -lib lib-path     配合 -manifest 使用，用于指定依赖库路径
+    -file name,file   配合 -update 使用，name 用于指定 .jar 中的路径，file 用于指定本地文件，用逗号分隔
+```
+
