@@ -1,6 +1,7 @@
 # security-jvm
 
 这是一个对 java 字节码进行加密的工具集，采用了 2048 位 RSA 算法，可以有效的进行 java 代码保护，也可以用于代码授权；
+
 工具集同时支持 Windows 和 Linux 平台（也可以支持 MacOS，但尚未测试）。
 
 工具集的使用：
@@ -44,3 +45,6 @@ Usage: Jartool <-command [options]>
     -file name,file   配合 -update 使用，name 用于指定 .jar 中的路径，file 用于指定本地文件，用逗号分隔
 ```
 
+## 反馈及意见
+当你遇到任何问题时，可以通过在 GitHub 的 repo 提交 issues 来反馈问题，请尽可能的描述清楚遇到的问题，如果有错误信息也一同附带，并且在 Labels 中指明类型为 bug 或者其他。
+[通过这里查看已有的 issues 和提交 Bug](https://github.com/azhisoft/security-jvm/issues)
