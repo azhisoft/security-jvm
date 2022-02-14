@@ -30,6 +30,10 @@ Usage: EnClass <-command [options]>
     -key keyfile  指定加密的 RSA 私钥文件
     -i pattern    指定要加密的文件（支持通配符）；不指定时，加密全部文件；指定时，仅加密指定的文件
     -x pattern    指定要排除的文件（支持通配符）
+    
+示例：
+    ./enclass -cp test-v1.0 -key rsa_pri.pem -x *model*
+    ./enclass -jar test.jar -key rsa_pri.pem -i *algorithm*
 ```
 
 - ### jartool 的用法：
